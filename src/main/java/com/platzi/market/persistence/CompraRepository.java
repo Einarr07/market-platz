@@ -1,7 +1,7 @@
 package com.platzi.market.persistence;
 
 import com.platzi.market.domain.Purchase;
-import com.platzi.market.domain.repository.PurchaseRepository;
+import com.platzi.market.domain.repository.IPurchaseRepository;
 import com.platzi.market.persistence.crud.ICompraCrudRepository;
 import com.platzi.market.persistence.entity.Compra;
 import com.platzi.market.persistence.mapper.PurchaseMapper;
@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class CompraRepository implements PurchaseRepository {
+public class CompraRepository implements IPurchaseRepository {
 
     @Autowired
     private ICompraCrudRepository compraCrudRepository;
